@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,12 +12,17 @@
   <h2>Por favor, confirmar asistencia:</h2>
 
   <form class="formulario">
-    Nombre <input type="text" name="name" id="name">
-    <br />
-    Edad <input type="number" name="age" id="age">
-    <br />
+    <br> <!--se agrega el inicio de los <br> -->
+    <p>Nombre</p>  <!-- debe estar dentro de un p-->
+    <input type="text" name="name" id="name">
+    <br/>
+    <br> <!--se agrega el inicio de los <br> -->
+    <p>Edad</p> <!-- debe estar dentro de un p-->
+    <input type="number" name="age" id="age">
+    <br/>
 
-    Nacionalidad
+    <p>Nacionalidad </p><!-- debe estar dentro de un p-->
+    <br>
     <select name="nationality" id="nationality">
       <option value="ar">Argentina</option>
       <option value="mx">Mexicana</option>
@@ -29,12 +33,10 @@
     <input type="submit">
   </form>
 
-  <div>
+  <div id="lista-de-invitados"> <!-- se debe de agregar lo del formulario de js-->
     <h2>Lista de invitados</h2>
-
   </div>
 
-  <script src="../formulario.js"></script>
+  <script src="./formulario.js"></script> <!--la ruta esta mal, es solo un punto -->
 </body>
-
 </html>
